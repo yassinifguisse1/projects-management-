@@ -1,0 +1,14 @@
+{
+  "buildCommand": "bun install && bun run build",
+  "installCommand": "curl -fsSL https://bun.sh/install | bash && export PATH=\"$HOME/.bun/bin:$PATH\" && bun install",
+  "framework": "nextjs",
+  "functions": {
+    "src/app/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "env": {
+    "BUN_INSTALL": "$HOME/.bun",
+    "PATH": "$HOME/.bun/bin:$PATH"
+  }
+}

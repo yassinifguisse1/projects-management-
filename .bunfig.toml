@@ -1,0 +1,11 @@
+[install]
+# Use exact versions for production
+exact = true
+# Cache dependencies
+cache = true
+# Use lockfile
+lockfile = true
+
+[install.scopes]
+# Ensure consistent package resolution
+"@types" = "latest"
