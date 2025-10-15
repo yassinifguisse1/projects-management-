@@ -978,7 +978,8 @@ export default function ProjectPage() {
 
   const renderTodoItem = (todo: Todo, depth: number = 0, parentId: string | null = null) => {
     const creator = getCreatorInfo(todo.createdBy);
-    const hasSubtasks = todo.subtasks && todo.subtasks.length > 0;
+    const subtasks = todo.subtasks ?? [];
+    const hasSubtasks = subtasks.length > 0;
     const isExpanded = expandedTasks.has(todo.id);
     const isAddingSubtask = addingSubtaskFor === todo.id;
     const isEditing = editingTaskId === todo.id;
@@ -1154,7 +1155,7 @@ export default function ProjectPage() {
               
               {hasSubtasks &&
             <Badge variant="outline" className="text-xs">
-                  {todo.subtasks.length} {todo.subtasks.length === 1 ? "subtask" : "subtasks"}
+                  {subtasks.length} {subtasks.length === 1 ? "subtask" : "subtasks"}
                 </Badge>
             }
               
@@ -1256,7 +1257,7 @@ export default function ProjectPage() {
         {/* Render subtasks recursively */}
         {isExpanded && hasSubtasks &&
         <div className="mt-2 space-y-2">
-            {todo.subtasks.map((subtask) => renderTodoItem(subtask, depth + 1, todo.id))}
+            {subtasks.map((subtask) => renderTodoItem(subtask, depth + 1, todo.id))}
           </div>
         }
       </div>);
