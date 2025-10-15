@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1760289552455,
+      "tag": "0000_bent_gamora",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1760294253075,
+      "tag": "0001_opposite_ben_urich",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1760295192287,
+      "tag": "0002_curved_susan_delgado",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1760295800974,
+      "tag": "0003_square_the_order",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1760298143884,
+      "tag": "0004_chubby_green_goblin",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1760298791359,
+      "tag": "0005_nostalgic_boomer",
+      "breakpoints": true
+    }
+  ]
+}
