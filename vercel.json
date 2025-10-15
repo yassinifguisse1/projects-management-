@@ -6,9 +6,5 @@
     "src/app/api/**/*.ts": {
       "runtime": "nodejs18.x"
     }
-  },
-  "env": {
-    "BUN_INSTALL": "$HOME/.bun",
-    "PATH": "$HOME/.bun/bin:$PATH"
   }
 }
